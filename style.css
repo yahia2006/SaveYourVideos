@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+header{
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#333;
+    opacity: 0.7;
+    position: fixed;
+    z-index: 99;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+nav button{
+    transition: 0.5s all linear;
+}
+
+#add{
+    padding: 0.5rem 1.5rem;
+    background-color: seagreen;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border: 2px solid seagreen;
+}
+#acc{
+    padding: 0.5rem 1.5rem;
+    background-color:blue;
+    border: 2px solid blue;
+    color: white;
+    cursor: pointer;
+
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color:aquamarine;
+}
+.howtouse{
+    width: 100%;
+    padding: 100px 60px;
+}
+#add:hover{
+    background: none;
+    color: white;
+}
+#acc:hover{
+    background: none;
+    color: white;
+}
+.home{
+    width: 100%;
+    
+}
+.video{
+    width: 100%;
+    height: 300px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.video img{
+    width: 100%;
+    height: 100%;
+}
+h3{
+    margin: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.para ul li{
+    margin-bottom:35px;
+   
+}
+#gotit{
+  position: absolute;
+  right:20px;
+  top: 92%;
+  padding: 0.5rem 1.9rem; 
+  background-color: seagreen;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.allvideos{
+    width: 100%;
+    padding: 145px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.frame{
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 75px;
+    margin-right: 25px;
+    transition: 0.2s all linear;
+    border-radius: 2px;
+    transition: 0.4s all linear;
+    text-align: center;
+}
+.frame:hover{
+    scale: 1.1;
+    border-radius: 15px;
+
+}
+.frame iframe{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s all linear;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.frame iframe:hover{
+    border-radius: 15px;
+}
+.addvideo{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: #333;
+    z-index: 10000000000000000;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 15px;
+    gap: 2rem;
+    color: white;
+    transition: 0.3s all linear;
+    scale: 0;
+
+
+}
+.addvideo label{
+    margin-bottom: 35px;
+}
+.addvideo input{
+    padding: 0.5rem 1.9rem;
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
+    border: 4px solid whitesmoke;
+    margin-bottom: 35px;
+}
+.addvideo button{
+    padding: 0.5rem 1.9rem;
+    color: white;
+    background-color: mediumaquamarine;
+    cursor: pointer;
+    margin-top: 45px;
+}
+
+::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+#close{
+    padding: 0.5rem 1rem;
+    position: absolute;
+    font-size: 1.3rem;
+    top: 0px;
+    left: 90%;
+    transform: translateY(-35px);
+    background-color:rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+
+}
+
+
+@media(max-width:600px){
+    .howtouse{
+        width: 100%;
+        padding: 70px 20px;
+    }
+    .video{
+        width: 100%;
+        height: 250px;
+        border: 2px solid blue;
+        border-radius: 5px;
+        margin-bottom: 25px;
+    }
+    .allvideos{
+        width: 100%;
+        padding: 145px 40px;
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .addvideo{
+        width: 90%;
+        height: 50%;
+        position: absolute;
+        background-color: #333;
+        z-index: 10000000000000000;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 15px;
+        gap: 2rem;
+        color: white;
+        transition: 0.3s all linear;
+        scale: 0;
+    
+    
+    }
+    .frame{
+        width: 100%;
+        height: 200px;
+        background-color: whitesmoke;
+        margin-bottom: 75px;
+        margin-right: 25px;
+        transition: 0.2s all linear;
+        border: 2px solid whitesmoke;
+        border-radius: 2px;
+        text-align: center;
+        box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+
+}
+.del{
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    background-color:#333;
+    cursor: pointer;
+    color: white;
+    margin-top: 15px;
+    border-radius: 50%;
+    transition: 0.3s all linear;
+    transform: translateY(-350%) translateX(134px);
+    opacity: 0;
+}
+.del:hover{
+    background-color: red;
+}
+.frame:hover .del{
+    opacity: 1;
+
+}
+@media(min-height:600px){
+    .howtouse{
+        width: 100%;
+        padding: 120px 20px;
+    }
+}
